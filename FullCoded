@@ -1,0 +1,45 @@
+local library = loadstring(game:HttpGet(('https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/wall%20v3')))()
+
+local w = library:CreateWindow("NoScopeArcade")
+
+local b = w:CreateFolder("Settings")
+
+b:Label("SlientAim",{
+    TextSize = 15; -- Self Explaining
+    TextColor = Color3.fromRGB(255,255,255); -- Self Explaining
+    BgColor = Color3.fromRGB(69,69,69); -- Self Explaining
+    
+})
+
+b:Button("SlientAim",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Akden1z/NoScopeArcade/main/Updated", true))()
+end)
+
+b:Button("Anti-AFK",function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Akden1z/ANTI-AFK/main/Pro", true))()
+end)
+
+b:Toggle("AFK Mode",function(bool)
+    shared.toggle = bool
+    print(shared.toggle)
+end)
+
+b:Toggle("AntiLag",function(bool)
+    shared.toggle = bool
+    print(shared.toggle)
+end)
+
+b:Toggle("Toggle Script",function(bool)
+    shared.toggle = bool
+    print(shared.toggle)
+end)
+
+b:Toggle("Fix Camera Alw",function(bool)
+    shared.toggle = bool
+    print(shared.toggle)
+end)
+
+b:Toggle("Run API",function(bool)
+    shared.toggle = bool
+    print(shared.toggle)
+end)
